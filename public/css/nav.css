@@ -1,0 +1,34 @@
+.navbar {
+  border: 2px solid red;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  font-family: 'lato';
+  color: var(--text-clr);
+}
+
+.navbar .navbar-brand:hover {
+  color: var(--text-clr);
+}
+
+.navbar .hospital-name {
+  width: 15rem;
+  padding: 5px;
+}
+
+.navbar .hospital-name img {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media all and (max-width: 430px)
+{
+  .navbar .hospital-name {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+

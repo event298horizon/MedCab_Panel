@@ -1,0 +1,10 @@
+.sidebar {
+    border: 2px solid green;
+    width: 18rem;   
+    padding: 2rem;
+}
+
+.sidebar .tabs .tab img{
+    height: 2.5rem;
+    margin-right: 0.8rem;
+}
