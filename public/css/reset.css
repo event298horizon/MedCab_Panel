@@ -7,7 +7,7 @@
     --input-bg: #F2F2F2;
 
     /* font sizes */
-    --fs-title: clamp(1.2rem, 1.5vw, 1.4rem);
+    --fs-title: clamp(1rem, 1.3vw , 1.1rem);
     ;
 }
 
@@ -18,6 +18,9 @@
     font-family: "Lato", sans-serif;
 }
 
+p {
+    margin-bottom: 0;
+}
 
 .secondary-heading {
     font-size: var(--fs-title);

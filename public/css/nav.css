@@ -1,5 +1,5 @@
 .navbar {
-  border: 2px solid red;
+  height: 10vh;
   padding: 0.5rem 1rem;
 }
 
@@ -14,8 +14,9 @@
 }
 
 .navbar .hospital-name {
-  width: 15rem;
+  /* width: 15rem; */
   padding: 5px;
+  padding-right: 2rem;
 }
 
 .navbar .hospital-name img {
@@ -23,12 +24,36 @@
   width: 2rem;
 }
 
-@media all and (max-width: 430px)
-{
-  .navbar .hospital-name {
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+#ham-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1200px) {
+  #ham-menu {
+    display: inline-block;
   }
 }
 
+@media all and (max-width: 430px) {
+
+  .navbar {
+    height: 8vh;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .navbar .container-fluid {
+    flex-wrap: nowrap;
+  }
+
+
+  .navbar .hospital-name {
+    padding-right: 1rem;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .navbar .navbar-brand #medcab {
+    display: none;
+  }
+}
