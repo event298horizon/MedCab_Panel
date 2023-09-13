@@ -1,0 +1,59 @@
+.navbar {
+  height: 10vh;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  font-family: 'lato';
+  color: var(--text-clr);
+}
+
+.navbar .navbar-brand:hover {
+  color: var(--text-clr);
+}
+
+.navbar .hospital-name {
+  /* width: 15rem; */
+  padding: 5px;
+  padding-right: 2rem;
+}
+
+.navbar .hospital-name img {
+  height: 2rem;
+  width: 2rem;
+}
+
+#ham-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1200px) {
+  #ham-menu {
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 430px) {
+
+  .navbar {
+    height: 8vh;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .navbar .container-fluid {
+    flex-wrap: nowrap;
+  }
+
+
+  .navbar .hospital-name {
+    padding-right: 1rem;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .navbar .navbar-brand #medcab {
+    display: none;
+  }
+}

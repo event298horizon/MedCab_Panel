@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ambulanceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\loginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// Login api route
+Route::get('data', [loginController::class, 'userLogin']);
+
+// ambulance category api route
+Route::get('ambulance', [ambulanceController::class, 'ambulance_category']);

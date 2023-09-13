@@ -1,0 +1,37 @@
+:root {
+    
+    /* text colors */
+    --text-clr: #41404D;
+
+    /* background colors */
+    --input-bg: #F2F2F2;
+
+    /* font sizes */
+    --fs-title: clamp(1rem, 1.3vw , 1.1rem);
+    ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.secondary-heading {
+    font-size: var(--fs-title);
+    color: var(--text-clr)
+}
+
+.text-clr {
+    color: var(--text-clr);
+}
+
+.input-bg {
+    background-color: var(--input-bg);
+}
+

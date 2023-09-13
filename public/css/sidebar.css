@@ -1,0 +1,27 @@
+#sidebar {
+    display: inline-block;
+}
+
+.sidebar {
+    height: 90vh;
+    width: fit-content;   
+    padding: 2vw;
+    display: block;
+}
+
+.sidebar .tabs .tab img{
+    height: 2.2rem;
+    margin-right: 0.8rem;
+}
+
+@media all and (max-width: 1200px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .sidebar {
+        height: 92vh;
+    }
+}
