@@ -1,0 +1,11 @@
+.pathology {
+    border: 2px solid red;
+    width: 85%;
+}
+
+@media all and (max-width: 1200px) {
+    .pathology {
+        width: 100%;
+        position: fixed;
+    }
+}
