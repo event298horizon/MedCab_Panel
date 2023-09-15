@@ -1,12 +1,15 @@
 #sidebar {
     display: inline-block;
+    z-index:5;
+    background: white;
 }
 
 .sidebar {
     height: 90vh;
-    width: fit-content;   
+    width: 18vw;   
     padding: 2vw;
-    display: block;
+    display: inline-block;
+    z-index: 5;
 }
 
 .sidebar .tabs .tab img{
@@ -17,6 +20,9 @@
 @media all and (max-width: 1200px) {
     #sidebar {
         display: none;
+    }
+    .sidebar {
+        width: 18rem;
     }
 }
 

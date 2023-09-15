@@ -1,0 +1,109 @@
+.recommend .test-card .left {
+    height: 100%;
+}
+
+.recommend .test-card .right {
+    gap: 1rem;
+}
+
+.recommend .test-card .right .btns {
+    gap: 1rem;
+}
+
+.recommend .grid-container-box-2 {
+    display: none;
+}
+
+@media all and (max-width: 820px) {
+    .recommend .search-bar {
+        flex-direction: row !important;
+    }
+
+    .recommend .search-bar .filter {
+        width: fit-content;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .recommend .grid-container-box-1 {
+        display: none;
+    }
+
+    .recommend .grid-container-box-2 {
+        display: block;
+    }
+
+    .recommend .grid-container-box-2 .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .recommend .grid-container .last-item {
+        grid-column-start: 2;
+    }
+
+}
+
+
+
+@media all and (max-width: 750px) {
+    .recommend .search-bar {
+        flex-direction: column !important;
+    }
+
+    .recommend .search-bar .filter {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 700px) {
+
+    .recommend .grid-container .last-item {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .recommend .grid-container-box-2 .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .recommend .grid-container .last-item {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .recommend .grid-container .last-item {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .recommend .test-card .btns {
+        display: block !important;
+    }
+
+    .recommend ,.test-card .btns button {
+        margin-right: 0.5rem;
+    }
+
+    .recommend .test-card .btns p{
+        margin-top: 0.5rem;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+    .recommend .grid-container-box-2 .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+    }
+
+    .recommend .grid-container .last-item {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+}

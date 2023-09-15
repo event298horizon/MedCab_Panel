@@ -1,11 +1,185 @@
 .pathology {
-    border: 2px solid red;
-    width: 85%;
+    height: 90vh;
+    display: flex;
+    width: 82vw;
 }
+
+/* left section */
+.pathology .left-section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 70%;
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+.pathology .search-bar {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.pathology .search-bar .search {
+    border: 1px solid var(--border-clr);
+    border-radius: 10px;
+    width: 50%;
+}
+
+.pathology .search input {
+    border: none;
+    outline: none;  
+    width: 100%;
+}
+
+.pathology .search-bar .btns {
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+
+.pathology .filter {
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.pathology .filter button {
+    color: var(--text-clr-light)
+}
+
+.pathology .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: scroll;
+}
+
+.pathology .main-content::-webkit-scrollbar {
+    display: none;
+}
+
+
+.pathology .test-card {
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;  
+}
+
+.pathology .test-card .text {
+    gap: 0.5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.pathology .test-card .text .test-details div {
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* left section */
+
+/* right section */
+.pathology .right-section {
+    padding: 1rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pathology .right-section .test-type-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow-y: scroll;
+}
+
+.pathology .right-section .test-type-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.pathology .right-section .test-type-card {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    border-radius: 1rem;
+}
+
+.pathology .right-section .test-type-card .test-label {
+    font-weight: 700;
+}
+
+/* right section */
 
 @media all and (max-width: 1200px) {
     .pathology {
+        /* position: fixed; */
         width: 100%;
-        position: fixed;
+    }
+}
+
+
+@media all and (max-width: 820px) {
+
+    .pathology .left-section {
+        width: 60%;
+    }
+
+    .pathology .right-section {
+        width: 40%;
+    }
+
+    .pathology .left-section .search-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .pathology .left-section .search-bar .search {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .pathology .left-section .filter {
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+    .pathology .left-section .filter::-webkit-scrollbar {
+        display: none;
+    }
+
+    .pathology .left-section .main-content {
+        gap: 0.5rem;
+        height: 70%;
+    }
+}
+
+
+@media all and (max-width: 630px) {
+    .pathology {
+        height: 100%;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .pathology .left-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pathology .right-section {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .pathology .left-section .test-card button {
+        transform: scale(0.9)
     }
 }
