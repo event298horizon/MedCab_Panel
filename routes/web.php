@@ -46,9 +46,29 @@ Route::get('/recommend', function() {
 // login
 Route::get('/login', function() {
     return view('login');
-});
+})->name('login');
+// login end
 
 // register
 Route::get('/register', function() {
     return view('register');
-});
+})->name('register');
+// register end
+
+// facilities
+Route::get('/facilities', function() {
+    return view('facilities');
+})->name('facilities');
+// facilities end
+
+// hospital details
+Route::get('/hospital_details', function() {
+    return view('hospital_details');
+})->name('hospital_details');
+// hospital details
+
+// settings
+Route::get('/settings', function() {
+    return view('settings');
+})->name('settings');
+// settings end

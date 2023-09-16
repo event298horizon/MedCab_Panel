@@ -1,0 +1,88 @@
+.hospital-details {
+    padding-right: 5rem;
+    background-color: var(--background-light);
+}
+
+.hospital-details .left-section .main-content {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+
+.hospital-details .left-section .main-content .test-card {
+    width: fit-content;
+    gap: 1rem;
+    padding: 1rem;
+}   
+
+.hospital-details .left-section .main-content .test-card .card-header {
+    justify-content: space-between;
+    padding: 0;
+    gap: 5rem;
+}   
+
+.hospital-details .left-section .main-content .test-card .card-header img {
+    height: 3rem;
+}   
+
+.hospital-details .left-section .main-content .test-card .card-content {
+    gap: 1rem;
+}   
+
+
+.hospital-details .left-section .main-content .test-card .card-content .content-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}   
+
+.hospital-details .left-section .main-content .test-card .card-content .last-item .web-link {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+@media all and (max-width: 1200px) {
+    .hospital-details {
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width: 820px) {
+    .hospital-details .main-content {
+        height: 100% !important;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .hospital-details .search-bar {
+        flex-direction: row !important;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    .hospital-details .main-content {
+        flex-direction: column !important;
+    }
+
+    .hospital-details .test-card {
+        width: 100% !important;
+    }
+
+    .hospital-details .test-card .card-header {
+        gap: 3rem !important;
+    }
+
+    .hospital-details .test-card .card-header img {
+        height: 5rem !important;
+    }
+
+    .hospital-details .test-card .card-header .card-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        transform: scale(0.9);
+    }
+}

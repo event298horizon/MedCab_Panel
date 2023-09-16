@@ -15,7 +15,7 @@
     /* font sizes */
     --fs-title: clamp(1rem, 1.3vw , 1.1rem);
     --fs-primary: clamp(0.9rem, 1vw, 1rem);
-    ;
+    --fs-secondary: clamp(0.9rem, 0.8vw, 1rem);
 }
 
 * {
@@ -51,12 +51,14 @@ p {
 
 .fs-title {
     font-size: var(--fs-title);
-    color: var(--text-clr)
 }
 
 .fs-primary {
     font-size: var(--fs-primary);
+}
 
+.fs-secondary {
+    font-size: var(--fs-secondary)
 }
 /* font sizes end */
 

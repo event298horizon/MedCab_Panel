@@ -31,3 +31,21 @@ if(window.location.pathname.split("/").pop() == 'login' || window.location.pathn
 {
     nav.style.display = "none";
 }
+
+
+// JavaScript code to handle increment and decrement
+const decrementButton = document.getElementById("decrement");
+const incrementButton = document.getElementById("increment");
+const valueInput = document.getElementById("value");
+
+decrementButton.addEventListener("click", () => {
+    let currentValue = parseInt(valueInput.value);
+    if (currentValue > 0) {
+        valueInput.value = currentValue - 1;
+    }
+});
+
+incrementButton.addEventListener("click", () => {
+    let currentValue = parseInt(valueInput.value);
+    valueInput.value = currentValue + 1;
+});

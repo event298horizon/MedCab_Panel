@@ -1,0 +1,25 @@
+.settings .settings-block {
+    width: 28rem;
+    padding: 2rem;
+}
+
+.settings .settings-block > button {
+    width: fit-content;
+}
+
+.settings .settings-card > div {
+    padding-top: 1rem;
+}
+
+@media all and (max-width: 630px) {
+    .settings {
+        height: 90vh;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .settings .settings-block {
+        width: 100%;
+        padding: 1rem;
+    }
+}

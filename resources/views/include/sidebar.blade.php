@@ -1,7 +1,8 @@
 <!-- SideBar -->
 <section id="sidebar">
-        <section class=" sidebar border-top border-4 shadow d-flex flex-column gap-5">
-            <div class="tabs upper-tabs d-flex flex-column gap-2 fs-title">
+    <section class=" sidebar border-top border-4 shadow d-flex flex-column gap-5">
+        <div class="tabs upper-tabs d-flex flex-column gap-2 fs-title">
+            <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -12,6 +13,8 @@
                         </p>
                     </div>
                 </div>
+            </a>
+            <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -22,6 +25,8 @@
                         </p>
                     </div>
                 </div>
+            </a>
+            <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -32,6 +37,8 @@
                         </p>
                     </div>
                 </div>
+            </a>
+            <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -42,6 +49,8 @@
                         </p>
                     </div>
                 </div>
+            </a>
+            <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -52,6 +61,8 @@
                         </p>
                     </div>
                 </div>
+            </a>
+            <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -62,6 +73,8 @@
                         </p>
                     </div>
                 </div>
+            </a>
+            <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -72,8 +85,10 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="tabs lower-tabs d-flex flex-column gap-2 fs-title">
+            </a>
+        </div>
+        <div class="tabs lower-tabs d-flex flex-column gap-2 fs-title">
+            <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -84,6 +99,8 @@
                         </p>
                     </div>
                 </div>
+            </a>
+            <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -94,7 +111,8 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </a>
+        </div>
     </section>
-    <!-- SideBar -->
+</section>
+<!-- SideBar -->

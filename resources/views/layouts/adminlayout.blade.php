@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="{{ url('css/ambulances.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/recommend.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/login.css') }}?<?php echo time(); ?>">
-
+    <link rel="stylesheet" href="{{ url('css/facilities.css') }}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{ url('css/hospital_details.css') }}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{ url('css/settings.css') }}?<?php echo time(); ?>">
     <!-- custom css end -->
 
     <title>MEDCAB PANEL</title>
