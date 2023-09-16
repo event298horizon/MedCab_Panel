@@ -1,7 +1,7 @@
 <!-- SideBar -->
 <section id="sidebar">
     <section class=" sidebar border-top border-4 shadow d-flex flex-column gap-5">
-        <div class="tabs upper-tabs d-flex flex-column gap-2 fs-title">
+        <div class="tabs upper-tabs d-flex flex-column fs-title">
             <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="{{Route('facilities')}}">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="{{Route('ambulances')}}">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="{{Route('pathology')}}">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="{{Route('recommend')}}">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="{{Route('doctors')}}">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -74,7 +74,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="{{Route('hospital_details')}}">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
@@ -87,7 +87,7 @@
                 </div>
             </a>
         </div>
-        <div class="tabs lower-tabs d-flex flex-column gap-2 fs-title">
+        <div class="tabs lower-tabs d-flex flex-column fs-title">
             <a href="">
                 <div class="tab d-flex align-items-center">
                     <div>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="{{Route('settings')}}">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">

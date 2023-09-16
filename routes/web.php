@@ -16,31 +16,31 @@ use Illuminate\Support\Facades\Route;
 // landing page
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 // landing page end
 
 // pathology
 Route::get('/pathology', function () {
     return view('pathology');
-});
+})->name('pathology');
 // pathology end
 
 // doctors
 Route::get('/doctors', function() {
     return view('doctors');
-});
+})->name('doctors');
 // doctors end
 
 // ambulances
 Route::get('/ambulances', function() {
     return view('ambulances');
-});
+})->name('ambulances');
 // ambulances end
 
 // recommend
 Route::get('/recommend', function() {
     return view('recommend');
-});
+})->name('recommend');
 // recommend end
 
 // login

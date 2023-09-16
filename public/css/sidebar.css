@@ -12,6 +12,15 @@
     z-index: 5;
 }
 
+.sidebar a {
+    text-decoration: none;
+    color: var(--text-clr);
+    padding: 0.5rem;
+    font-size: var(--fs-primary);
+}
+
+
+
 .sidebar .tabs .tab img{
     height: 2.2rem;
     margin-right: 0.8rem;
