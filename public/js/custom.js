@@ -20,6 +20,14 @@ ham.addEventListener('click', () => {
         sidebar.style.display = "none";
         sidebar_flag = false;
     }
-
-
 })
+// console.log(this.href.substring(this.href.lastIndexOf('/') + 1));
+
+console.log(window.location.pathname.split("/").pop())
+
+const nav = document.querySelector('.navbar');
+
+if(window.location.pathname.split("/").pop() == 'login' || window.location.pathname.split("/").pop() == 'register') 
+{
+    nav.style.display = "none";
+}

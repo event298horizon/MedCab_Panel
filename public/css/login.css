@@ -1,0 +1,77 @@
+.login {
+    height: 100vh;
+}
+
+.login .image-part {
+    background-color: #D3E8E4;
+}
+
+.login .form-part {
+    padding: 10rem;
+    gap: 1rem;
+}
+
+.login .form-part button {
+    position: relative;
+}
+
+.login .form-part button img {
+    position: absolute;
+    right: 0;
+}
+
+.login .form-part form {
+    display: flex;
+    flex-direction: column;
+
+}   
+
+.login .form-part button {
+    margin-top: 0.5rem;
+}
+
+.login .form-part .register-label {
+    margin: 2rem 0 0 0;
+}
+
+@media all and (max-width: 1250px) {
+    .login .form-part {
+        padding: 5rem;
+    }
+}
+@media all and (max-width: 870px) {
+    .login .form-part {
+        padding: 3rem;
+    }
+}
+@media all and (max-width: 780px) {
+    .login {
+        display: block !important;
+    }
+
+    .login .image-part {
+        height: 50%;
+        width: 100% !important;
+    }
+    .login .form-part {
+        width: 100% !important;
+        padding: 5rem;
+    }
+}
+@media all and (max-width: 460px) {
+    .login .form-part {
+        padding: 3rem;
+    }
+}
+@media all and (max-width: 400px) {
+    .login .form-part {
+        padding: 2rem 1rem;
+    }
+}
+
+/* register */
+.login form .rounded img {
+    width: 1rem;
+    height: 1rem;;
+    margin-right: 0.5rem;
+}

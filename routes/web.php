@@ -42,3 +42,13 @@ Route::get('/recommend', function() {
     return view('recommend');
 });
 // recommend end
+
+// login
+Route::get('/login', function() {
+    return view('login');
+});
+
+// register
+Route::get('/register', function() {
+    return view('register');
+});
