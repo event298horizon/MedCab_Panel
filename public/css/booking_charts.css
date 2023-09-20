@@ -1,0 +1,22 @@
+.dataCharts{
+    display: flex;
+    background: white;
+    height: 15rem;
+    width: auto;
+}
+.dataCharts .data{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-right: 2rem;
+}
+.dataCharts .chart{
+    position: relative;
+    align-self: stretch;
+    height: 100% !important;
+    width:auto;
+}
+.dataCharts #chart{
+    height: 100% !important;
+    width: 100% !important;
+}

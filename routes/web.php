@@ -72,3 +72,10 @@ Route::get('/settings', function() {
     return view('settings');
 })->name('settings');
 // settings end
+
+
+// @Uttam
+// Pathology Dashboard
+Route::get('/pathology/dashboard', function() {
+    return view('pathology_dashboard');
+})->name('pathology_dashboard');

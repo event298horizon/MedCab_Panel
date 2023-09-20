@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
     <!-- favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}">
     <!-- favicon -->
@@ -31,6 +31,10 @@
     <link rel="stylesheet" href="{{ url('css/facilities.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/hospital_details.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/settings.css') }}?<?php echo time(); ?>">
+    
+    <!-- @Uttam -->
+    <link rel="stylesheet" href="{{ url('css/booking_charts.css') }}?<?php echo time(); ?>">
+    
     <!-- custom css end -->
 
     <title>MEDCAB PANEL</title>
