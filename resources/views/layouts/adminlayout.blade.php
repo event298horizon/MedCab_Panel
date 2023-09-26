@@ -19,6 +19,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- bootstrap css end -->
 
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <!-- font awesome end -->
+
     <!-- custom css start -->
     <link rel="stylesheet" href="{{ url('css/reset.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/nav.css') }}?<?php echo time(); ?>">
@@ -31,10 +36,17 @@
     <link rel="stylesheet" href="{{ url('css/facilities.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/hospital_details.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/settings.css') }}?<?php echo time(); ?>">
-    
+    <link rel="stylesheet" href="{{ url('css/dashboard.css') }}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{ url('css/pathology-tests.css') }}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{ url('css/hospital_registration.css') }}?<?php echo time(); ?>">
+    <!-- popup form -->
+    <link rel="stylesheet" href="{{ url('css/popup_form.css') }}?<?php echo time(); ?>">
+
     <!-- @Uttam -->
     <link rel="stylesheet" href="{{ url('css/booking_charts.css') }}?<?php echo time(); ?>">
     
+    
+
     <!-- custom css end -->
 
     <title>MEDCAB PANEL</title>
@@ -77,6 +89,7 @@
     <!-- HTML end -->
     <!-- custom js start -->
     <script src="{{url('js/custom.js')}}?<?php echo time(); ?>"></script>
+    <script src="{{url('js/popup_form.js')}}?<?php echo time(); ?>"></script>
     <!-- custom js end -->
 
     <!-- bootstrap js start -->

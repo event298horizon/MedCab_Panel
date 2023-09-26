@@ -1,0 +1,13 @@
+.main-dashboard .left-dash {
+    width: 75%;
+}
+
+.main-dashboard .right-dash {
+    width: 35%;
+}
+
+@media all and (max-width: 980px) {
+    .main-dashboard .left-dash .main-content .test-card .upper-section > div {
+        flex-direction: row !important;
+    }
+}

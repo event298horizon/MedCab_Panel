@@ -7,6 +7,76 @@
     @include('include.sidebar')
 
     <section class="section pathology recommend">
+
+        <!-- send request pop-up form -->
+        <div class="pop_up_form text-clr bg-white border" id="send_requests">
+            <div class="d-flex align-items-center justify-content-between fs-title">
+                <p class="fw-bold">Send Requests</p>
+                <i id="" class="crossBtn fa-solid fa-xmark"></i>
+            </div>
+            <form class="fs-secondary">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">To Hospital</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Situation</label>
+                    <div class="d-flex flex-column flex-sm-row w-100 justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Emergency
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Non Emergency
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Patient Type</label>
+                    <div class="d-flex flex-column flex-sm-row w-100 justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefaultSecond" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Accidental
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefaultSecond" id="flexRadioDefault4" checked>
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                Non Accidental
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Disease</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Age</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Description</label>
+                    <textarea class="form-control fs-secondary" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+                </div>
+
+                <div class="doneBtn">
+                    <button type="submit" class="btn btn-danger w-100">Done</button>
+                </div>
+            </form>
+        </div>
+        <!-- send request pop-up form end -->
+
         <div class="left-section bg-light w-100">
             <div class="recommend-heading">
                 <p class="fs-title text-clr fw-bold">Recommend</p>
@@ -20,7 +90,7 @@
                     <button class="btn">Rejected</button>
                 </div>
                 <div class="btns">
-                    <button class="btn btn-danger">Send Requests</button>
+                    <button onclick="sendRequest()" class="btn btn-danger">Send Requests</button>
                 </div>
             </div>
 
@@ -542,8 +612,15 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 </section>
+
+<script>
+    const sendRequest = () => {
+        const send_requests = document.querySelector('#send_requests');
+        send_requests.style = "display:flex";
+    }
+</script>
 
 @endsection

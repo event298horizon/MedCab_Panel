@@ -13,11 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// landing page
+// landing page (login)
 Route::get('/', function () {
-    return view('home');
-})->name('home');
-// landing page end
+    return view('login');
+})->name('login');
+// landing page ends
+
+// hospital dashboard
+Route::get('/hospital/owner_dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+// hospital dashboard end
 
 // pathology
 Route::get('/pathology', function () {
@@ -43,12 +49,6 @@ Route::get('/recommend', function() {
 })->name('recommend');
 // recommend end
 
-// login
-Route::get('/login', function() {
-    return view('login');
-})->name('login');
-// login end
-
 // register
 Route::get('/register', function() {
     return view('register');
@@ -73,9 +73,30 @@ Route::get('/settings', function() {
 })->name('settings');
 // settings end
 
+// pathology Tests
+Route::get('/pathology/tests', function() {
+    return view('pathology-tests');
+})->name('pathology-tests');
+// pathology tests end
+
+// temporary pop up form check
+Route::get('/form', function() {
+    return view('popup_form');
+})->name('popup_form');
+// temporary pop up form check end
+
+// hospital onboarding
+Route::get('/hospital_onboard', function() {
+    return view('hospital_registration');
+})->name('hospital_registration');
+// hospital onboarding end
+
+
+
 
 // @Uttam
 // Pathology Dashboard
 Route::get('/pathology/dashboard', function() {
     return view('pathology_dashboard');
 })->name('pathology_dashboard');
+

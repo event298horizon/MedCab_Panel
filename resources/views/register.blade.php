@@ -32,10 +32,9 @@
             <button type="submit" class="btn btn-danger w-100 fw-bold">Register<span><img src="{{asset('assets/images/icons/right-arrow.svg')}}" alt=""></span></button>
 
             <center><label for="" class="register-label">Already have an account?</label></center>
-            <a href="{{route('login')}}">
 
-                <button type="submit" class="btn border-danger primary-clr w-100 fw-bold">Login<span><img src="{{asset('assets/images/icons/red-right-arrow.svg')}}" alt=""></span></button>
-            </a>
+                <a href="{{route('login')}}" class="btn border-danger primary-clr w-100 fw-bold">Login<span><img src="{{asset('assets/images/icons/red-right-arrow.svg')}}" alt=""></span></a>
+
             </form>
     </div>
 </div>

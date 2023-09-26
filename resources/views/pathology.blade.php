@@ -9,6 +9,93 @@
     @include('include.sidebar')
 
     <section class="section pathology">
+
+        <!-- add test package pop-up form -->
+        <div class="pop_up_form text-clr bg-white border" id="add_test_package">
+            <div class="d-flex align-items-center justify-content-between fs-title">
+                <p class="fw-bold">New Test Package</p>
+                <i id="" class="crossBtn fa-solid fa-xmark"></i>
+            </div>
+            <form class="fs-secondary">
+                <div class="">
+                    <label for="exampleInputEmail1" class="form-label">Test Package Title</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter here">
+                </div>
+                <div class="addTest-cards">
+                    <div class="addTest-card d-flex flex-column border">
+                        <label for="">Add Test 1</label>
+                        <select class="form-select fs-secondary text-clr-light" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Description">
+                    </div>
+                    <div class="addTest-card d-flex flex-column border">
+                        <label for="">Add Test 2</label>
+                        <select class="form-select fs-secondary text-clr-light" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Description">
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <button class="btn border border-danger text-danger"><span class="plus">+</span> Test</button>
+                </div>
+
+                <div class="doneBtn">
+                    <button type="submit" class="btn btn-danger w-100">Done</button>
+                </div>
+            </form>
+        </div>
+        <!-- add test package pop-up form end -->
+
+        <!-- edit test details pop-up form -->
+        <div class="pop_up_form text-clr bg-white border" id="edit_test_details">
+            <div class="d-flex align-items-center justify-content-between fs-title">
+                <p class="fw-bold">Edit Details</p>
+                <i id="" class="crossBtn fa-solid fa-xmark"></i>
+            </div>
+            <form class="fs-secondary">
+                <div class="">
+                    <label for="exampleInputEmail1" class="form-label">Test Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter here">
+                </div>
+                <div class="addTest-cards">
+                    <div class="addTest-card d-flex flex-column border">
+                        <label for="">Add Description</label>
+                        <textarea class="form-control fs-secondary" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+                    </div>
+                </div>
+
+                <div class="doneBtn">
+                    <button type="submit" class="btn btn-danger w-100">Done</button>
+                </div>
+            </form>
+        </div>
+        <!-- edit test details pop-up form end -->
+
+        <!-- drafts pop-up form -->
+        <div class="pop_up_form text-clr bg-white border" id="drafts">
+            <div class="d-flex align-items-center justify-content-between fs-title">
+                <p class="fw-bold">Drafts</p>
+                <i id="" class="crossBtn fa-solid fa-xmark"></i>
+            </div>
+            <form class="fs-secondary d-flex flex-column justify-content-end">
+                
+
+                <div class="doneBtn">
+                    <button type="submit" class="btn btn-danger w-100">Done</button>
+                </div>
+            </form>
+        </div>
+        <!-- drafts pop-up form end -->
+
         <div class="left-section bg-light">
             <div class="search-bar d-flex">
                 <div class="search d-flex align-items-center bg-white">
@@ -16,8 +103,8 @@
                     <input class="" type="text" placeholder="Search test, packages here">
                 </div>
                 <div class="btns">
-                    <button class="btn btn-dark">Drafts (4)</button>
-                    <button class="btn btn-danger"><span class="plus">+</span> Test Package</button>
+                    <button onclick="drafts()" class="btn btn-dark">Drafts (4)</button>
+                    <button onclick="addTestPackage()" class="btn btn-danger"><span class="plus">+</span> Test Package</button>
                 </div>
             </div>
 
@@ -47,7 +134,7 @@
                         <div class="test-btns">
                             <button class="btn btn-success">Active</button>
                             <button class="btn border">More</button>
-                            <button class="btn border">Edit</button>
+                            <button onclick="editTestDetails()" class="btn border">Edit</button>
                         </div>
                     </div>
                 </div>
@@ -253,6 +340,24 @@
         </div>
     </section>
 </section>
+
+<script>
+    const addTestPackage = () => {
+        const newTest = document.querySelector('#add_test_package');
+        newTest.style = "display:flex";
+    }
+
+    const editTestDetails = () => {
+        const editDetails = document.querySelector('#edit_test_details');
+        editDetails.style = "display:flex";
+    }
+
+    const drafts = () => {
+        const editDetails = document.querySelector('#drafts');
+        editDetails.style = "display:flex";
+    }
+
+</script>
 
 <!-- pathology end -->
 @endsection

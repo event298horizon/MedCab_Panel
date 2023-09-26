@@ -1,3 +1,4 @@
+// sidebar
 const ham = document.getElementById('ham-menu');
 const sidebar = document.getElementById('sidebar');
 const section = document.querySelector('.section');
@@ -21,16 +22,19 @@ ham.addEventListener('click', () => {
         sidebar_flag = false;
     }
 })
-// console.log(this.href.substring(this.href.lastIndexOf('/') + 1));
+// sidebar ended
 
+
+// removing navbar from login and register page
 console.log(window.location.pathname.split("/").pop())
 
 const nav = document.querySelector('.navbar');
 
-if(window.location.pathname.split("/").pop() == 'login' || window.location.pathname.split("/").pop() == 'register') 
+if(window.location.pathname.split("/").pop() == '' || window.location.pathname.split("/").pop() == 'register') 
 {
     nav.style.display = "none";
 }
+// navbar removed
 
 
 // JavaScript code to handle increment and decrement
@@ -49,3 +53,4 @@ incrementButton.addEventListener("click", () => {
     let currentValue = parseInt(valueInput.value);
     valueInput.value = currentValue + 1;
 });
+// increment and decrement done

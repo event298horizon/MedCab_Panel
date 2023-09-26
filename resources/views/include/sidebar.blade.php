@@ -2,7 +2,7 @@
 <section id="sidebar">
     <section class=" sidebar border-top border-4 shadow d-flex flex-column gap-5">
         <div class="tabs upper-tabs d-flex flex-column fs-title">
-            <a href="">
+            <a href="{{Route('dashboard')}}">
                 <div class="tab d-flex align-items-center">
                     <div>
                         <img src="{{asset('assets/images/dummy.png')}}" alt="">
