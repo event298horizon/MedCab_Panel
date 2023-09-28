@@ -11,3 +11,38 @@
         flex-direction: row !important;
     }
 }
+
+@media all and (max-width: 940px) {
+    .dashboard .left-dash {
+        width: 60%;
+    }
+
+    .dashboard .right-dash {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 840px) {
+    .dashboard .right-dash .req-status {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 820px) {
+    .dashboard .right-dash .search-bar {
+        flex-direction: column !important;
+    }
+    .dashboard .right-dash .search-bar .search {
+        width: 100% !important;
+    }
+    .dashboard {
+        flex-direction: column;
+    }
+    .dashboard .left-dash, .dashboard .right-dash {
+        width: 100%;
+        height: auto;
+    }
+    .dashboard .right-dash .req-status {
+        flex-direction: row;
+    }
+}

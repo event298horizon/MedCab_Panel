@@ -1,22 +1,56 @@
 .dataCharts{
     display: flex;
+    justify-content: space-between;
     background: white;
-    height: 15rem;
+    height: 100%;
     width: auto;
 }
 .dataCharts .data{
     display: flex;
     align-items: center;
-    gap: 5rem;
+    justify-content: space-between;
+    width: 30%;
+    /* gap: 5rem; */
+    /* border: 2px solid red; */
     margin-right: 2rem;
 }
 .dataCharts .chart{
     position: relative;
     align-self: stretch;
     height: 100% !important;
-    width:auto;
+    width:60%;
 }
 .dataCharts #chart{
     height: 100% !important;
     width: 100% !important;
+}
+
+@media all and (max-width: 1150px) {
+    .dataCharts .data {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 630px) {
+    .dataCharts {
+        flex-direction: column-reverse;
+    }
+    .dataCharts .data {
+        width: 50%;
+    }
+    .dataCharts .chart {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .dataCharts .data {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 380px) {
+    .dataCharts .data {
+        width: 90%;
+    }
 }

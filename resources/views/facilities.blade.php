@@ -1,6 +1,6 @@
 @extends('layouts.adminlayout')
-
 @section('main')
+
 <div class="d-flex">
     @include('include.sidebar')
     <section class="section pathology doctors facilities bg-light px-0 text-clr">
@@ -19,102 +19,24 @@
 
             <div class="main-content">
                 <!-- availability cards -->
+                @foreach ($get_data as $key)
                 <div class="test-card d-flex flex-column border bg-white">
                     <div class="upper-section d-flex">
-                        <img src="{{asset('assets/images/doctor.png')}}" alt="">
+                        <img src="{{ env('DYNAMIC_IMAGE_URL') . '/' . $key->hospital_serv_cat_icon }}" alt="img">
                         <div class="d-flex">
 
-                            <p class="fs-primary">ISU bed with ventilator</p>
+                            <p class="fs-primary">{{$key->hospital_serv_cat_name}}</p>
                             <div class="value-container border rounded">
-                                <button class="btn value-button border-end rounded-0 rounded-start" id="decrement"><img src="{{asset('assets/images/icons/minus.png')}}" alt=""></button>
+                                <button class="btn value-button border-end rounded-0 rounded-start shadow-none" id="decrement"><img src="{{asset('assets/images/icons/minus.png')}}" alt=""></button>
                                 <input type="number" id="value" value="0" min="0" class="border-0">
-                                <button class="btn value-button border-start rounded-0 rounded-end" id="increment"><img src="{{asset('assets/images/icons/plus.png')}}" alt=""></button>
+                                <button class="btn value-button border-start rounded-0 rounded-end shadow-none" id="increment"><img src="{{asset('assets/images/icons/plus.png')}}" alt=""></button>
                             </div>
                         </div>
 
                     </div>
                     <p class="text-clr-light fs-primary">Updated 16 Sep, 12:00 PM</p>
                 </div>
-                <div class="test-card d-flex flex-column border bg-white">
-                    <div class="upper-section d-flex">
-                        <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        <div class="d-flex">
-
-                            <p class="fs-primary">ISU bed with ventilator</p>
-                            <div class="value-container border rounded">
-                                <button class="btn value-button border-end rounded-0 rounded-start" id="decrement"><img src="{{asset('assets/images/icons/minus.png')}}" alt=""></button>
-                                <input type="number" id="value" value="0" min="0" class="border-0">
-                                <button class="btn value-button border-start rounded-0 rounded-end" id="increment"><img src="{{asset('assets/images/icons/plus.png')}}" alt=""></button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <p class="text-clr-light fs-primary">Updated 16 Sep, 12:00 PM</p>
-                </div>
-                <div class="test-card d-flex flex-column border bg-white">
-                    <div class="upper-section d-flex">
-                        <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        <div class="d-flex">
-
-                            <p class="fs-primary">ISU bed with ventilator</p>
-                            <div class="value-container border rounded">
-                                <button class="btn value-button border-end rounded-0 rounded-start" id="decrement"><img src="{{asset('assets/images/icons/minus.png')}}" alt=""></button>
-                                <input type="number" id="value" value="0" min="0" class="border-0">
-                                <button class="btn value-button border-start rounded-0 rounded-end" id="increment"><img src="{{asset('assets/images/icons/plus.png')}}" alt=""></button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <p class="text-clr-light fs-primary">Updated 16 Sep, 12:00 PM</p>
-                </div>
-                <div class="test-card d-flex flex-column border bg-white">
-                    <div class="upper-section d-flex">
-                        <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        <div class="d-flex">
-
-                            <p class="fs-primary">ISU bed with ventilator</p>
-                            <div class="value-container border rounded">
-                                <button class="btn value-button border-end rounded-0 rounded-start" id="decrement"><img src="{{asset('assets/images/icons/minus.png')}}" alt=""></button>
-                                <input type="number" id="value" value="0" min="0" class="border-0">
-                                <button class="btn value-button border-start rounded-0 rounded-end" id="increment"><img src="{{asset('assets/images/icons/plus.png')}}" alt=""></button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <p class="text-clr-light fs-primary">Updated 16 Sep, 12:00 PM</p>
-                </div>
-                <div class="test-card d-flex flex-column border bg-white">
-                    <div class="upper-section d-flex">
-                        <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        <div class="d-flex">
-
-                            <p class="fs-primary">ISU bed with ventilator</p>
-                            <div class="value-container border rounded">
-                                <button class="btn value-button border-end rounded-0 rounded-start" id="decrement"><img src="{{asset('assets/images/icons/minus.png')}}" alt=""></button>
-                                <input type="number" id="value" value="0" min="0" class="border-0">
-                                <button class="btn value-button border-start rounded-0 rounded-end" id="increment"><img src="{{asset('assets/images/icons/plus.png')}}" alt=""></button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <p class="text-clr-light fs-primary">Updated 16 Sep, 12:00 PM</p>
-                </div>
-                <div class="test-card d-flex flex-column border bg-white">
-                    <div class="upper-section d-flex">
-                        <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        <div class="d-flex">
-
-                            <p class="fs-primary">ISU bed with ventilator</p>
-                            <div class="value-container border rounded">
-                                <button class="btn value-button border-end rounded-0 rounded-start" id="decrement"><img src="{{asset('assets/images/icons/minus.png')}}" alt=""></button>
-                                <input type="number" id="value" value="0" min="0" class="border-0">
-                                <button class="btn value-button border-start rounded-0 rounded-end" id="increment"><img src="{{asset('assets/images/icons/plus.png')}}" alt=""></button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <p class="text-clr-light fs-primary">Updated 16 Sep, 12:00 PM</p>
-                </div>
+                @endforeach
                 <!-- availability cards end -->
             </div>
         </div>
@@ -138,64 +60,101 @@
                             <img src="{{asset('assets/images/doctor.png')}}" alt="">
                         </div>
                         <p class="text-center">ISU bed with ventilator</p>
-                        <button class="btn btn-success">Active</button>
+                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                            <div class="slider"></div>
+                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                        </div>
                     </div>
                     <div class="test-card d-flex flex-column align-items-center border bg-white">
                         <div class="img">
                             <img src="{{asset('assets/images/doctor.png')}}" alt="">
                         </div>
                         <p class="text-center">ISU bed with ventilator</p>
-                        <button class="btn btn-success">Active</button>
+                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                            <div class="slider"></div>
+                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                        </div>
                     </div>
                     <div class="test-card d-flex flex-column align-items-center border bg-white">
                         <div class="img">
                             <img src="{{asset('assets/images/doctor.png')}}" alt="">
                         </div>
                         <p class="text-center">ISU bed with ventilator</p>
-                        <button class="btn btn-success">Active</button>
+                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                            <div class="slider"></div>
+                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                        </div>
                     </div>
                     <div class="test-card d-flex flex-column align-items-center border bg-white">
                         <div class="img">
                             <img src="{{asset('assets/images/doctor.png')}}" alt="">
                         </div>
                         <p class="text-center">ISU bed with ventilator</p>
-                        <button class="btn btn-success">Active</button>
+                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                            <div class="slider"></div>
+                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                        </div>
                     </div>
                     <div class="test-card d-flex flex-column align-items-center border bg-white">
                         <div class="img">
                             <img src="{{asset('assets/images/doctor.png')}}" alt="">
                         </div>
                         <p class="text-center">ISU bed with ventilator</p>
-                        <button class="btn btn-success">Active</button>
+                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                            <div class="slider"></div>
+                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                        </div>
                     </div>
                     <div class="test-card d-flex flex-column align-items-center border bg-white">
                         <div class="img">
                             <img src="{{asset('assets/images/doctor.png')}}" alt="">
                         </div>
                         <p class="text-center">ISU bed with ventilator</p>
-                        <button class="btn btn-success">Active</button>
+                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                            <div class="slider"></div>
+                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                        </div>
                     </div>
                     <div class="test-card d-flex flex-column align-items-center border bg-white">
                         <div class="img">
                             <img src="{{asset('assets/images/doctor.png')}}" alt="">
                         </div>
                         <p class="text-center">ISU bed with ventilator</p>
-                        <button class="btn btn-success">Active</button>
+                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                            <div class="slider"></div>
+                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                        </div>
                     </div>
                     <div class="test-card d-flex flex-column align-items-center border bg-white">
                         <div class="img">
                             <img src="{{asset('assets/images/doctor.png')}}" alt="">
                         </div>
                         <p class="text-center">ISU bed with ventilator</p>
-                        <button class="btn btn-success">Active</button>
+                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                            <div class="slider"></div>
+                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                        </div>
                     </div>
                     <div class="test-card d-flex flex-column align-items-center border bg-white">
                         <div class="img">
                             <img src="{{asset('assets/images/doctor.png')}}" alt="">
                         </div>
                         <p class="text-center">ISU bed with ventilator</p>
-                        <button class="btn btn-success">Active</button>
+                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                            <div class="slider"></div>
+                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
     <!-- favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}">
     <!-- favicon -->
@@ -39,15 +39,18 @@
     <link rel="stylesheet" href="{{ url('css/dashboard.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/pathology-tests.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/hospital_registration.css') }}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{ url('css/pathology_dashboard.css') }}?<?php echo time(); ?>">
     <!-- popup form -->
     <link rel="stylesheet" href="{{ url('css/popup_form.css') }}?<?php echo time(); ?>">
 
     <!-- @Uttam -->
     <link rel="stylesheet" href="{{ url('css/booking_charts.css') }}?<?php echo time(); ?>">
-    
-    
 
     <!-- custom css end -->
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jquery end -->
 
     <title>MEDCAB PANEL</title>
 </head>
@@ -87,6 +90,41 @@
 
 
     <!-- HTML end -->
+
+    <!-- custom scripts start -->
+    <!-- toggler button script -->
+    <script>
+        const toggler = document.querySelector('.toggler');
+        const slider = document.querySelector('.slider');
+        const toggler_button = Array.from(document.querySelectorAll('.toggler button'));
+        let translated = false;
+
+        toggler_button[0].style.color = "white"
+        toggler_button[1].style.color = "black"
+
+        toggler.addEventListener('click', () => {
+            if (translated) {
+                slider.style.transform = 'translateX(0)';
+                slider.style.width = '70px';
+
+                toggler_button[0].style.color = "white"
+                toggler_button[1].style.color = "black"
+
+                translated = false
+            } else {
+                slider.style.transform = 'translateX(74px)';
+                slider.style.width = '88px';
+
+                toggler_button[0].style.color = "black"
+                toggler_button[1].style.color = "white"
+
+                translated = true
+            }
+        })
+    </script>
+    <!-- toggler button script end -->
+    <!-- custom scripts end -->
+
     <!-- custom js start -->
     <script src="{{url('js/custom.js')}}?<?php echo time(); ?>"></script>
     <script src="{{url('js/popup_form.js')}}?<?php echo time(); ?>"></script>

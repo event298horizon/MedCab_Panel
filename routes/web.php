@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\hospital_controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,9 +57,7 @@ Route::get('/register', function() {
 // register end
 
 // facilities
-Route::get('/facilities', function() {
-    return view('facilities');
-})->name('facilities');
+Route::get('/facilities',[hospital_controller::class,'hospital_services'])->name('facilities');
 // facilities end
 
 // hospital details
@@ -99,4 +98,6 @@ Route::get('/hospital_onboard', function() {
 Route::get('/pathology/dashboard', function() {
     return view('pathology_dashboard');
 })->name('pathology_dashboard');
+
+
 

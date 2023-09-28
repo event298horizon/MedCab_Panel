@@ -2,36 +2,38 @@
 
 </style>
 <div class="dataCharts">
-    <div class="bg-white p-3 data">
+    <div class="data bg-white p-3">
         <div class="bookings">
-            <h4>Bookings</h4>
+            <h4 class="fs-primary">Bookings</h4>
             <div class="time">
-                <p>This month</p>
-                <p>320</p>
+                <p class="fs-secondary">This month</p>
+                <p class="fw-bold">320</p>
             </div>
             <div class="time">
-                <p>This month</p>
-                <p>320</p>
+                <p class="fs-secondary">This month</p>
+                <p class="fw-bold">320</p>
             </div>
             <div class="time">
-                <p>This month</p>
-                <p>320</p>
+                <p class="fs-secondary">This month</p>
+                <p class="fw-bold">320</p>
             </div>
         </div>
         <div class="revenue">
-            <h4>Revenue</h4>
+            <h4 class="fs-primary">Revenue</h4>
             <div class="time">
-                <p>This month</p>
-                <p>320</p>
+                <p class="fs-secondary">This month</p>
+                <p class="fw-bold">320</p>
             </div>
             <div class="time">
-                <p>This month</p>
-                <p>320</p>
+                <p class="fs-secondary">This month</p>
+                <p class="fw-bold">320</p>
             </div>
             <div class="time">
-                <p>This month</p>
-                <p>320</p>
+                <p class="fs-secondary">This month</p>
+                <p class="fw-bold">320</p>
             </div>
+            
+            
         </div>
     </div>
     <div class="chart">

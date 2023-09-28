@@ -87,7 +87,7 @@
                 <i id="" class="crossBtn fa-solid fa-xmark"></i>
             </div>
             <form class="fs-secondary d-flex flex-column justify-content-end">
-                
+
 
                 <div class="doneBtn">
                     <button type="submit" class="btn btn-danger w-100">Done</button>
@@ -132,10 +132,17 @@
                         </div>
 
                         <div class="test-btns">
-                            <button class="btn btn-success">Active</button>
-                            <button class="btn border">More</button>
-                            <button onclick="editTestDetails()" class="btn border">Edit</button>
+                            <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                                <div class="slider"></div>
+                                <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                                <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                            </div>
+                            <div class="btns d-flex gap-2">
+                                <button class="btn border">More</button>
+                                <button onclick="editTestDetails()" class="btn border">Edit</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="test-card d-flex align-items-center border bg-white">
@@ -152,10 +159,17 @@
                         </div>
 
                         <div class="test-btns">
-                            <button class="btn btn-success">Active</button>
-                            <button class="btn border">More</button>
-                            <button class="btn border">Edit</button>
+                            <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                                <div class="slider"></div>
+                                <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                                <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                            </div>
+                            <div class="btns d-flex gap-2">
+                                <button class="btn border">More</button>
+                                <button onclick="editTestDetails()" class="btn border">Edit</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="test-card d-flex align-items-center border bg-white">
@@ -172,10 +186,17 @@
                         </div>
 
                         <div class="test-btns">
-                            <button class="btn btn-success">Active</button>
-                            <button class="btn border">More</button>
-                            <button class="btn border">Edit</button>
+                            <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                                <div class="slider"></div>
+                                <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                                <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                            </div>
+                            <div class="btns d-flex gap-2">
+                                <button class="btn border">More</button>
+                                <button onclick="editTestDetails()" class="btn border">Edit</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="test-card d-flex align-items-center border bg-white">
@@ -192,10 +213,17 @@
                         </div>
 
                         <div class="test-btns">
-                            <button class="btn btn-success">Active</button>
-                            <button class="btn border">More</button>
-                            <button class="btn border">Edit</button>
+                            <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                                <div class="slider"></div>
+                                <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                                <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                            </div>
+                            <div class="btns d-flex gap-2">
+                                <button class="btn border">More</button>
+                                <button onclick="editTestDetails()" class="btn border">Edit</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="test-card d-flex align-items-center border bg-white">
@@ -212,30 +240,17 @@
                         </div>
 
                         <div class="test-btns">
-                            <button class="btn btn-success">Active</button>
-                            <button class="btn border">More</button>
-                            <button class="btn border">Edit</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="test-card d-flex align-items-center border bg-white">
-                    <div class="image">
-                        <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                    </div>
-                    <div class="text d-flex flex-column">
-                        <div class="test-details">
-                            <p class="fs-title">Test Name</p>
-                            <div>
-                                <p class="test-desc fs-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, delectus? Quae exercitationem</p>
-                                <a href="" class="primary-clr text-decoration-none fs-primary">Read More...</a>
+                            <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
+                                <div class="slider"></div>
+                                <button id="active" class="btn shadow-none rounded-pill">Active</button>
+                                <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                            </div>
+                            <div class="btns d-flex gap-2">
+                                <button class="btn border">More</button>
+                                <button onclick="editTestDetails()" class="btn border">Edit</button>
                             </div>
                         </div>
 
-                        <div class="test-btns">
-                            <button class="btn btn-success">Active</button>
-                            <button class="btn border">More</button>
-                            <button class="btn border">Edit</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -251,84 +266,23 @@
                     </div>
                     <div class="details text-clr fs-primary">
                         <p class="test-label">Booking Test Type</p>
-                        <p>Customer: Customer Name</p>
+                        <!-- <p>Customer: Customer Name</p>
                         <p>Address: Customer</p>
-                        <p>Contact Number: Customer</p>
-                    </div>
-                    <div class="btns d-flex gap-3">
-                        <button class="btn border text-clr-light">Directions</button>
-                        <button class="rounded-circle border border-none"><img src="{{asset('assets/images/icons/call.png')}}" alt=""></button>
-                    </div>
-                </div>
-                <div class="test-type-card border fs-primary">
-                    <div class="time">
-                        <p class="text-clr-light">02:45 PM</p>
-                    </div>
-                    <div class="details text-clr fs-primary">
-                        <p class="test-label">Booking Test Type</p>
-                        <p>Customer: Customer Name</p>
-                        <p>Address: Customer</p>
-                        <p>Contact Number: Customer</p>
-                    </div>
-                    <div class="btns d-flex gap-3">
-                        <button class="btn border text-clr-light">Directions</button>
-                        <button class="rounded-circle border border-none"><img src="{{asset('assets/images/icons/call.png')}}" alt=""></button>
-                    </div>
-                </div>
-                <div class="test-type-card border fs-primary">
-                    <div class="time">
-                        <p class="text-clr-light">02:45 PM</p>
-                    </div>
-                    <div class="details text-clr fs-primary">
-                        <p class="test-label">Booking Test Type</p>
-                        <p>Customer: Customer Name</p>
-                        <p>Address: Customer</p>
-                        <p>Contact Number: Customer</p>
-                    </div>
-                    <div class="btns d-flex gap-3">
-                        <button class="btn border text-clr-light">Directions</button>
-                        <button class="rounded-circle border border-none"><img src="{{asset('assets/images/icons/call.png')}}" alt=""></button>
-                    </div>
-                </div>
-                <div class="test-type-card border fs-primary">
-                    <div class="time">
-                        <p class="text-clr-light">02:45 PM</p>
-                    </div>
-                    <div class="details text-clr fs-primary">
-                        <p class="test-label">Booking Test Type</p>
-                        <p>Customer: Customer Name</p>
-                        <p>Address: Customer</p>
-                        <p>Contact Number: Customer</p>
-                    </div>
-                    <div class="btns d-flex gap-3">
-                        <button class="btn border text-clr-light">Directions</button>
-                        <button class="rounded-circle border border-none"><img src="{{asset('assets/images/icons/call.png')}}" alt=""></button>
-                    </div>
-                </div>
-                <div class="test-type-card border fs-primary">
-                    <div class="time">
-                        <p class="text-clr-light">02:45 PM</p>
-                    </div>
-                    <div class="details text-clr fs-primary">
-                        <p class="test-label">Booking Test Type</p>
-                        <p>Customer: Customer Name</p>
-                        <p>Address: Customer</p>
-                        <p>Contact Number: Customer</p>
-                    </div>
-                    <div class="btns d-flex gap-3">
-                        <button class="btn border text-clr-light">Directions</button>
-                        <button class="rounded-circle border border-none"><img src="{{asset('assets/images/icons/call.png')}}" alt=""></button>
-                    </div>
-                </div>
-                <div class="test-type-card border fs-primary">
-                    <div class="time">
-                        <p class="text-clr-light">02:45 PM</p>
-                    </div>
-                    <div class="details text-clr fs-primary">
-                        <p class="test-label">Booking Test Type</p>
-                        <p>Customer: Customer Name</p>
-                        <p>Address: Customer</p>
-                        <p>Contact Number: Customer</p>
+                        <p>Contact Number: Customer</p> -->
+                        <table class="text-clr-light">
+                            <tr>
+                                <th>Customer: </th>
+                                <td>Customer Name</td>
+                            </tr>
+                            <tr>
+                                <th>Address: </th>
+                                <td>Customer Address</td>
+                            </tr>
+                            <tr>
+                                <th>Contact Number: </th>
+                                <td>Customer Contact</td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="btns d-flex gap-3">
                         <button class="btn border text-clr-light">Directions</button>
@@ -356,8 +310,9 @@
         const editDetails = document.querySelector('#drafts');
         editDetails.style = "display:flex";
     }
-
 </script>
+
+
 
 <!-- pathology end -->
 @endsection

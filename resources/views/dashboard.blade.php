@@ -3,7 +3,7 @@
 @section('main')
 <div class="d-flex">
     @include('include.sidebar')
-    <section class="section pathology doctors facilities main-dashboard bg-light px-0 text-clr">
+    <section class="section pathology doctors facilities main-dashboard dashboard bg-light px-0 text-clr">
 
         <!-- left section -->
         <div class="left-dash d-flex flex-column gap-3 ">
@@ -30,9 +30,9 @@
                                     <p class="text-clr-light fs-primary">Updated 16 Sep, 12:00 PM</p>
                                 </div>
                                 <div class="value-container border rounded">
-                                    <button class="btn value-button border-end rounded-0 rounded-start" id="decrement"><img src="{{asset('assets/images/icons/minus.png')}}" alt=""></button>
+                                    <button class="btn value-button border-end rounded-0 rounded-start shadow-none" id="decrement"><img src="{{asset('assets/images/icons/minus.png')}}" alt=""></button>
                                     <input type="number" id="value" value="0" min="0" class="border-0">
-                                    <button class="btn value-button border-start rounded-0 rounded-end" id="increment"><img src="{{asset('assets/images/icons/plus.png')}}" alt=""></button>
+                                    <button class="btn value-button border-start rounded-0 rounded-end shadow-none" id="increment"><img src="{{asset('assets/images/icons/plus.png')}}" alt=""></button>
                                 </div>
                             </div>
 
@@ -124,96 +124,20 @@
                     <div class="test-type-card border fs-primary d-flex flex-row justify-content-between">
                         <div class="details text-clr fs-primary d-flex flex-column gap-2">
                             <p class="test-label">Booking Test Type</p>
-                            <div class="d-flex gap-3">
-                                <div class="d-flex flex-column gap-1">
-                                    <p>Customer:</p>
-                                    <p>Address:</p>
-                                    <p>Contact Number:</p>
-                                </div>
-                                <div class="d-flex flex-column gap-1">
-                                    <p>Customer Name</p>
-                                    <p>Customer Address</p>
-                                    <p>Customer Phone</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btns d-flex flex-column justify-content-between align-items-end">
-                            <div class="d-flex gap-3">
-                                <button class="btn border text-clr-light">Directions</button>
-                                <button class="rounded-circle border border-none"><img src="{{asset('assets/images/icons/call.png')}}" alt=""></button>
-                            </div>
-                            <div class="time">
-                                <p class="text-clr-light">02:45 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="test-type-card border fs-primary d-flex flex-row justify-content-between">
-                        <div class="details text-clr fs-primary d-flex flex-column gap-2">
-                            <p class="test-label">Booking Test Type</p>
-                            <div class="d-flex gap-3">
-                                <div class="d-flex flex-column gap-1">
-                                    <p>Customer:</p>
-                                    <p>Address:</p>
-                                    <p>Contact Number:</p>
-                                </div>
-                                <div class="d-flex flex-column gap-1">
-                                    <p>Customer Name</p>
-                                    <p>Customer Address</p>
-                                    <p>Customer Phone</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btns d-flex flex-column justify-content-between align-items-end">
-                            <div class="d-flex gap-3">
-                                <button class="btn border text-clr-light">Directions</button>
-                                <button class="rounded-circle border border-none"><img src="{{asset('assets/images/icons/call.png')}}" alt=""></button>
-                            </div>
-                            <div class="time">
-                                <p class="text-clr-light">02:45 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="test-type-card border fs-primary d-flex flex-row justify-content-between">
-                        <div class="details text-clr fs-primary d-flex flex-column gap-2">
-                            <p class="test-label">Booking Test Type</p>
-                            <div class="d-flex gap-3">
-                                <div class="d-flex flex-column gap-1">
-                                    <p>Customer:</p>
-                                    <p>Address:</p>
-                                    <p>Contact Number:</p>
-                                </div>
-                                <div class="d-flex flex-column gap-1">
-                                    <p>Customer Name</p>
-                                    <p>Customer Address</p>
-                                    <p>Customer Phone</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btns d-flex flex-column justify-content-between align-items-end">
-                            <div class="d-flex gap-3">
-                                <button class="btn border text-clr-light">Directions</button>
-                                <button class="rounded-circle border border-none"><img src="{{asset('assets/images/icons/call.png')}}" alt=""></button>
-                            </div>
-                            <div class="time">
-                                <p class="text-clr-light">02:45 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="test-type-card border fs-primary d-flex flex-row justify-content-between">
-                        <div class="details text-clr fs-primary d-flex flex-column gap-2">
-                            <p class="test-label">Booking Test Type</p>
-                            <div class="d-flex gap-3">
-                                <div class="d-flex flex-column gap-1">
-                                    <p>Customer:</p>
-                                    <p>Address:</p>
-                                    <p>Contact Number:</p>
-                                </div>
-                                <div class="d-flex flex-column gap-1">
-                                    <p>Customer Name</p>
-                                    <p>Customer Address</p>
-                                    <p>Customer Phone</p>
-                                </div>
-                            </div>
+                            <table class="text-clr-light">
+                            <tr>
+                                <th>Customer: </th>
+                                <td>Customer Name</td>
+                            </tr>
+                            <tr>
+                                <th>Address: </th>
+                                <td>Customer Address</td>
+                            </tr>
+                            <tr>
+                                <th>Contact Number: </th>
+                                <td>Customer Contact</td>
+                            </tr>
+                        </table>
                         </div>
                         <div class="btns d-flex flex-column justify-content-between align-items-end">
                             <div class="d-flex gap-3">
@@ -234,7 +158,7 @@
             <div class="sec bottom-left-sec right-section w-100 h-100 px-0 py-0 gap-0">
                 <div class="title bg-white px-3 py-3">
                     <div class="search-bar d-flex flex-column gap-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="req-status d-flex justify-content-between">
 
                             <p class="primary-heading fw-bold text-clr">Booking Requests <span class="text-clr-light">(31 Ongoing)</span></p>
                             <a href="" class="text-decoration-none primary-clr">View All</a>

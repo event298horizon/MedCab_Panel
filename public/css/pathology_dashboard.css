@@ -1,0 +1,94 @@
+.path-dashboard .top-section {
+    height: 30%;
+    /* border: 2px solid red; */
+}
+.path-dashboard .bottom-section {
+    height: 70%;
+    /* border: 2px solid green; */
+}
+
+.path-dashboard .bookings_table {
+    height: 100%;
+    /* white-space: nowrap; */
+    overflow-y: scroll;
+}
+.path-dashboard .bookings_table::-webkit-scrollbar {
+    display: none;
+}
+
+.path-dashboard td, .path-dashboard td select {
+    font-size: var(--fs-secondary);
+}
+
+.path-dashboard td {
+    padding: 10px;
+}
+
+@media all and (max-width: 950px) {
+    .path-dashboard {
+        flex-direction: column;
+    }
+
+    .path-dashboard .left-dash, .path-dashboard .right-dash {
+        width: 100%;
+    }
+    
+    .path-dashboard .top-section {
+        height: 40%;
+    }
+
+    .path-dashboard .bottom-section {
+        height: auto;
+    }
+
+    /* right dash */
+    .path-dashboard .right-dash .search-bar {
+        flex-direction: row !important;
+        align-items: center;
+    }
+    .path-dashboard .right-dash .search-bar .search {
+        width: 50% !important;
+    }
+    .path-dashboard .right-dash .search-bar .req-status {
+        gap: 2rem;
+    }
+
+}
+
+@media all and (max-width: 700px) {
+    .path-dashboard .right-dash .search-bar {
+        flex-direction: column !important;
+
+    }
+    .path-dashboard .right-dash .search-bar .req-status {
+        width: 100%;
+    }
+    .path-dashboard .right-dash .search-bar .search {
+        width: 100% !important;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .path-dashboard td {
+        padding: 10px 5px;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .path-dashboard td, .path-dashboard td select {
+        font-size: 0.7rem !important;
+    }
+
+    .path-dashboard .left-dash .search-bar {
+        flex-direction: column !important;
+    }
+
+    .path-dashboard .left-dash .search-bar .search {
+        width: 100% !important;
+    }
+}
+@media all and (max-width: 480px) {
+    .path-dashboard td, .path-dashboard td select {
+        font-size: 0.5rem !important;
+    }
+}
