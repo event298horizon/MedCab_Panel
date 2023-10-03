@@ -20,6 +20,6 @@ class hospital_controller extends Controller
         $hospital_data = DB::table('hospital_lists')
         ->get();
 
-        return view('hospital_details', compact('$hospital'));
+        return view('hospital_details', compact('hospital_data'));
     }
 }

@@ -68,10 +68,13 @@ Route::get('/recommend', function () {
 // Facilities
 Route::get('/facilities', [hospital_controller::class, 'hospital_services'])->name('facilities');
 
-// Hospital Details
-Route::get('/hospital_details', function () {
-    return view('hospital_details');
-})->name('hospital_details');
+// facilities
+Route::get('/facilities',[hospital_controller::class,'hospital_services'])->name('facilities');
+// facilities end
+
+// hospital details
+Route::get('/hospital_details',[hospital_controller::class,'hospital_list'])->name('hospital_details');
+// hospital details
 
 // Settings
 Route::get('/settings', function () {

@@ -63,98 +63,10 @@
                         <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
                             <div class="slider"></div>
                             <button id="active" class="btn shadow-none rounded-pill">Active</button>
-                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
+                            <button id="unactive" class="btn shadow-none rounded-pill">Inactive</button>
                         </div>
                     </div>
-                    <div class="test-card d-flex flex-column align-items-center border bg-white">
-                        <div class="img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <p class="text-center">ISU bed with ventilator</p>
-                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
-                            <div class="slider"></div>
-                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
-                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
-                        </div>
-                    </div>
-                    <div class="test-card d-flex flex-column align-items-center border bg-white">
-                        <div class="img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <p class="text-center">ISU bed with ventilator</p>
-                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
-                            <div class="slider"></div>
-                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
-                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
-                        </div>
-                    </div>
-                    <div class="test-card d-flex flex-column align-items-center border bg-white">
-                        <div class="img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <p class="text-center">ISU bed with ventilator</p>
-                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
-                            <div class="slider"></div>
-                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
-                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
-                        </div>
-                    </div>
-                    <div class="test-card d-flex flex-column align-items-center border bg-white">
-                        <div class="img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <p class="text-center">ISU bed with ventilator</p>
-                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
-                            <div class="slider"></div>
-                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
-                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
-                        </div>
-                    </div>
-                    <div class="test-card d-flex flex-column align-items-center border bg-white">
-                        <div class="img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <p class="text-center">ISU bed with ventilator</p>
-                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
-                            <div class="slider"></div>
-                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
-                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
-                        </div>
-                    </div>
-                    <div class="test-card d-flex flex-column align-items-center border bg-white">
-                        <div class="img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <p class="text-center">ISU bed with ventilator</p>
-                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
-                            <div class="slider"></div>
-                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
-                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
-                        </div>
-                    </div>
-                    <div class="test-card d-flex flex-column align-items-center border bg-white">
-                        <div class="img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <p class="text-center">ISU bed with ventilator</p>
-                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
-                            <div class="slider"></div>
-                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
-                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
-                        </div>
-                    </div>
-                    <div class="test-card d-flex flex-column align-items-center border bg-white">
-                        <div class="img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <p class="text-center">ISU bed with ventilator</p>
-                        <div class="toggler btn border px-0 py-0 rounded-pill d-inline-block">
-                            <div class="slider"></div>
-                            <button id="active" class="btn shadow-none rounded-pill">Active</button>
-                            <button id="unactive" class="btn shadow-none rounded-pill">Unactive</button>
-                        </div>
-                    </div>
-                    
+
                 </div>
             </div>
         </div>

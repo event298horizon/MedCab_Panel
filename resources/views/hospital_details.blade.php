@@ -84,10 +84,11 @@
             </div>
 
             <div class="main-content d-flex flex-row fs-primary">
+                @foreach ($hospital_data as $key)
                 <div class="test-card d-flex flex-column border bg-white">
                     <div class="card-header w-100 d-flex border-0 bg-white">
                         <div class="card-img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
+                            <img src="{{ env('DYNAMIC_IMAGE_URL') . '/' . $key->hospital_logo}}" alt="img">
                         </div>
                         <div class="card-btns fs-primary">
                             <div class="btn border primary-clr fs-secondary">Copy Details</div>
@@ -98,23 +99,23 @@
                     <div class="card-content d-flex flex-column bg-white border-0">
                         <div class="content-item">
                             <p class="text-clr-light fs-secondary">Hospital Name</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
+                            <p class="text-clr fs-secondary">{{$key->hospital_name}}</p>
                         </div>
                         <div class="content-item">
                             <p class="text-clr-light fs-secondary">Address</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
+                            <p class="text-clr fs-secondary">{{$key->hospital_address}}</p>
                         </div>
                         <div class="content-item">
                             <p class="text-clr-light fs-secondary">PIN Code</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
+                            <p class="text-clr fs-secondary">{{$key->hospital_pincode}}</p>
                         </div>
                         <div class="content-item">
                             <p class="text-clr-light fs-secondary">Contact Number</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
+                            <p class="text-clr fs-secondary">{{$key->hospital_contact_no}}</p>
                         </div>
                         <div class="content-item">
                             <p class="text-clr-light fs-secondary">Alternate Contact Number</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
+                            <p class="text-clr fs-secondary">{{$key->hospital_alt_contact_no}}</p>
                         </div>
                         <div class="content-item last-item">
                             <p class="text-clr-light fs-secondary">Links</p>
@@ -139,116 +140,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="test-card d-flex flex-column border bg-white">
-                    <div class="card-header w-100 d-flex border-0 bg-white">
-                        <div class="card-img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <div class="card-btns fs-primary">
-                            <div class="btn border primary-clr fs-secondary">Copy Details</div>
-                            <div class="btn border primary-clr fs-secondary">Share</div>
-                            <div class="btn border primary-clr fs-secondary">Edit Details</div>
-                        </div>
-                    </div>
-                    <div class="card-content d-flex flex-column bg-white border-0">
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">Hospital Name</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">Address</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">PIN Code</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">Contact Number</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">Alternate Contact Number</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item last-item">
-                            <p class="text-clr-light fs-secondary">Links</p>
-                            <div class="d-flex flex-column gap-2">
-                                <div class="web-link d-flex">
-                                    <img src="{{asset('assets/images/icons/facebook.png')}}" alt="">
-                                    <p class="text-clr fs-secondary">Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div class="web-link d-flex">
-                                    <img src="{{asset('assets/images/icons/facebook.png')}}" alt="">
-                                    <p class="text-clr fs-secondary">Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div class="web-link d-flex">
-                                    <img src="{{asset('assets/images/icons/facebook.png')}}" alt="">
-                                    <p class="text-clr fs-secondary">Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div class="web-link d-flex">
-                                    <img src="{{asset('assets/images/icons/facebook.png')}}" alt="">
-                                    <p class="text-clr fs-secondary">Lorem ipsum dolor sit amet.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="test-card d-flex flex-column border bg-white">
-                    <div class="card-header w-100 d-flex border-0 bg-white">
-                        <div class="card-img">
-                            <img src="{{asset('assets/images/doctor.png')}}" alt="">
-                        </div>
-                        <div class="card-btns fs-primary">
-                            <div class="btn border primary-clr fs-secondary">Copy Details</div>
-                            <div class="btn border primary-clr fs-secondary">Share</div>
-                            <div class="btn border primary-clr fs-secondary">Edit Details</div>
-                        </div>
-                    </div>
-                    <div class="card-content d-flex flex-column bg-white border-0">
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">Hospital Name</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">Address</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">PIN Code</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">Contact Number</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item">
-                            <p class="text-clr-light fs-secondary">Alternate Contact Number</p>
-                            <p class="text-clr fs-secondary">Sahara Hospital</p>
-                        </div>
-                        <div class="content-item last-item">
-                            <p class="text-clr-light fs-secondary">Links</p>
-                            <div class="d-flex flex-column gap-2">
-                                <div class="web-link d-flex">
-                                    <img src="{{asset('assets/images/icons/facebook.png')}}" alt="">
-                                    <p class="text-clr fs-secondary">Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div class="web-link d-flex">
-                                    <img src="{{asset('assets/images/icons/facebook.png')}}" alt="">
-                                    <p class="text-clr fs-secondary">Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div class="web-link d-flex">
-                                    <img src="{{asset('assets/images/icons/facebook.png')}}" alt="">
-                                    <p class="text-clr fs-secondary">Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div class="web-link d-flex">
-                                    <img src="{{asset('assets/images/icons/facebook.png')}}" alt="">
-                                    <p class="text-clr fs-secondary">Lorem ipsum dolor sit amet.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
         </div>
 
