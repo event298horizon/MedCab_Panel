@@ -29,58 +29,64 @@
                     </div>
 
                 </div>
-                <div class="bookings_table h-100">
-                <table class="w-100">
-                    <tr class="text-clr-light border-bottom">
-                        <td>BOOKING ID</td>
-                        <td>PATIENT NAME</td>
-                        <td>SAMPLE DATE & TIME</td>
-                        <td>PAYMENT</td>
-                        <td>TEST STATUS</td>
-                    </tr>
-                    @foreach($patient_name as $key)
-                    <tr>
-                        <td>
-                            <div class="form-check">
-                                <input class="form-check-input rounded-circle shadow-none" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    {{ $key->clot_order_id }}
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            {{ $key->clp_patient_name }}<br>
-                            +91{{ $key->clo_contact_no }}
-                        </td>
-                        <td>
-                            {{ $key->clots_selected_date }}<br>
-                            ({{ $key->clots_slot_from }}-{{ $key->clots_slot_to }}) ({{ $key->clots_day }})
-                        </td>
-                        <td>
-                            ₹{{ $key->clo_final_price }}<br>
-                            @if($key->clo_payment_status == '0')
-                                Payment Pending
-                            @elseif($key->clo_payment_status == '1')
-                                Payment Done
-                            @endif
-                        </td>
-                        <td>
-                        Last: Sample Collected<br>
-                        <select class="form-select rounded-pill py-0 shadow-none" name="clo_sample_collection_status" aria-label="Default select example">
-                            <option value="0" @if($key->clo_sample_collection_status == '0') selected @endif>Sample Collection Pending</option>
-                            <option value="1" @if($key->clo_sample_collection_status == '1') selected @endif>Sample Collection Done</option>
-                        </select>
-                    </td>
-                    </tr>
-                    @endforeach
-                </table>
-            </div>
+                <div class="bookings_table h-100 d-flex flex-column justify-content-between align-items-center">
+                    <table class="w-100">
+                        <tr class="text-clr-light border-bottom">
+                            <td>BOOKING ID</td>
+                            <td>PATIENT NAME</td>
+                            <td>SAMPLE DATE & TIME</td>
+                            <td>PAYMENT</td>
+                            <td>TEST STATUS</td>
+                        </tr>
+                        @foreach ($patient_name as $key)
+                
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input rounded-circle shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            {{ $key->clot_order_id }}
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    {{ $key->clp_patient_name }}<br>
+                                    +91{{ $key->clo_contact_no }}
+                                </td>
+                                <td>
+                                    {{ $key->clots_selected_date }}<br>
+                                    ({{ $key->clots_slot_from }}-{{ $key->clots_slot_to }}) ({{ $key->clots_day }})
+                                </td>
+                                <td>
+                                    ₹{{ $key->clo_final_price }}<br>
+                                    @if($key->clo_payment_status == '0')
+                                    Payment Pending
+                                    @elseif($key->clo_payment_status == '1')
+                                    Payment Done
+                                    @endif
+                                </td>
+                                <td>
+                                    Last: Sample Collected<br>
+                                    <select class="form-select rounded-pill py-0 shadow-none" name="clo_sample_collection_status" aria-label="Default select example">
+                                        <option value="0" @if($key->clo_sample_collection_status == '0') selected @endif>Sample Collection Pending</option>
+                                        <option value="1" @if($key->clo_sample_collection_status == '1') selected @endif>Sample Collection Done</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            @endforeach
+                        
+                    </table>
+                    <div>
+                        {{$patient_name->onEachSide(1)->links()}}
+                    </div>
+                    
+                </div>
 
             </div>
 
         </div>
         <!-- left section end -->
-   
+
         <!-- right section -->
         <div class="right-dash">
             <div class="sec bottom-left-sec right-section w-100 h-100 px-0 py-0 gap-0 border-start">
@@ -98,8 +104,8 @@
 
                     </div>
                 </div>
-                @foreach($customer_lab_order as $key)
                 <div class="test-type-cards px-3 py-3">
+                    @foreach($customer_lab_order as $key)
                     <div class="test-type-card border fs-primary bg-white">
                         <div class="d-flex justify-content-between py-2 border-bottom w-100">
                             <p>{{$key->customer_lab_order_id}}</p>
@@ -121,9 +127,9 @@
                             </div>
                         </div>
                     </div>
-                
+                    @endforeach
+
                 </div>
-                @endforeach
             </div>
         </div>
         <!-- right section end -->
