@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}">
@@ -59,29 +60,7 @@
     <!-- HTML start -->
     <!-- NavBar start -->
    
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container-fluid">
-            <div class="d-flex align-items-center">
-                <img src="{{ asset('/assets/images/ham.png')}}" id="ham-menu" class="mb-1 me-3" alt="">
-                <a class="navbar-brand" href="#">
-                    <span>
-                        <img src="{{ asset('/assets/images/logo.png')}}" class="mb-1" alt="logo" />
-                        <!-- <img src="../images/logo.png" class="mb-1" alt="" /> -->
-                    </span>
-                    <span id="medcab">
-                        MedCab
-                    </span>
-                </a>
-            </div>
 
-            <div class="hospital-name input-bg text-clr rounded-pill d-flex align-items-center gap-2">
-                <span class="hospital-img">
-                    <img src="{{asset('assets/images/hospital.png')}}" alt="" class="rounded-circle">
-                </span>
-                {{session('user_name')}}
-            </div>
-        </div>
-    </nav>
     <!-- NavBar end -->
 
 

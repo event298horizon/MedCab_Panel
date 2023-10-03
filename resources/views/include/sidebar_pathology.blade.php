@@ -50,6 +50,19 @@
                     </div>
                 </div>
             </a>
+            <a href="{{Route('pathology-logout')}}">
+                <div class="tab d-flex align-items-center">
+                    <div>
+                        <img src="{{asset('assets/images/dummy.png')}}" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            Logout
+                        </p>
+                    </div>
+                </div>
+            </a>
+ 
         </div>
         <div class="tabs lower-tabs d-flex flex-column fs-title">
             <a href="#">

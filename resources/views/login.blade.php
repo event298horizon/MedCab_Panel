@@ -1,5 +1,4 @@
-@extends('layouts.adminlayout')
-
+@extends('layouts.admin_layout')
 
 @section('main')
 
@@ -11,21 +10,15 @@
         <div>
             <img src="{{asset('assets/images/login-ambu.png')}}" alt="">
         </div>
-        <label for="" class="fs-title fw-bold d-block text-start">Login</label>
-        <form>
+        <label for="" class="fs-title fw-bold d-block text-start">Lab Owner Login</label>
+        <form action="{{ route('get_otp') }}" method="post">
+            @csrf
             <div class="mb-3">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="User Name" aria-describedby="emailHelp">
+                <input type="number" class="form-control" name ="mobile" id="exampleInputEmail1" placeholder="Enter Your Number" aria-describedby="emailHelp">
+                <input type="hidden" class="form-control form-control-lg" autocomplete="off"  name="auth_key" value="dsdsdsdsd" required/>
             </div>
-            <div class="mb-3">
-                <input type="password" class="form-control" placeholder="Password" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check d-flex justify-content-between">
-                <div>
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-                </div>
-                <label for="" class="primary-clr">Forgot Password?</label>
-            </div>
+           
+            
             <button type="submit" class="btn btn-danger w-100 fw-bold">Login<span><img src="{{asset('assets/images/icons/right-arrow.svg')}}" alt=""></span></button>
 
             <center><label for="" class="register-label">Don't have an account?</label></center>
